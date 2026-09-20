@@ -10,15 +10,17 @@
 // ============================================================================
 
 // CS2 Client Memory Offsets (as referenced in disassembled binary structures)
+// CS2 Client Memory Offsets
 namespace Offsets {
     constexpr uintptr_t dwEntityList = 0x2577BE0;
     constexpr uintptr_t dwLocalPlayerPawn = 0x23CCC08;
     constexpr uintptr_t dwViewMatrix = 0x23D21F0;
     
     // Pawn / Entity Offsets
-    constexpr uintptr_t m_iHealth = 0x34C;
+    constexpr uintptr_t m_iHealth = 0x344; // 0x34C -> 0x344 olarak güncellendi
     constexpr uintptr_t m_iTeamNum = 0x3E7;
     constexpr uintptr_t m_vOldOrigin = 0x13B8;
+}
 }
 
 // Global Menu & Render States
