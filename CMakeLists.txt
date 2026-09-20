@@ -12,13 +12,7 @@ else()
     add_link_options(-mwindows -e mainCRTStartup)
 endif()
 
-add_executable(cs2_esp
-    main.cpp
-    esp.hpp
-    memory.hpp
-    math.hpp
-    offsets.hpp
-    overlay.hpp
+add_executable(cs2_esp main.cpp)
 )
 
 target_link_libraries(cs2_esp PRIVATE gdi32 user32)
